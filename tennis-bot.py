@@ -18,7 +18,7 @@ connection_button = WebDriverWait(driver,15).until(EC.element_to_be_clickable( (
 connection_button.click()
 
 username = WebDriverWait(driver,10).until(EC.element_to_be_clickable( (By.ID, 'loginForm:username') ))
-username.send_keys("ENTER_EMAIL_ADRESS_HERE")
+username.send_keys("ENTER_EMAIL_ADDRESS_HERE")
 
 password = driver.find_element_by_id("loginForm:password")
 password.send_keys("ENTER_PASSWORD_HERE")
